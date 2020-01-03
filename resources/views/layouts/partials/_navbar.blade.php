@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
-    <a href="#" class="navbar-brand">Alamraya ARSOFT</a>
+    <a href="{{Route('/')}}" class="navbar-brand">Alamraya ARSOFT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-stream"></i>
     </button>
