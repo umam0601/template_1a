@@ -27,8 +27,8 @@ $(document).ready(function () {
     // Collapse ibox function
     $('.collapse-link').on('click', function (e) {
         e.preventDefault();
-        var ibox = $(this).closest('div.ibox');
-        var button = $(this).find('i');
+        var ibox    = $(this).closest('div.ibox');
+        var button  = $(this).find('i');
         var content = ibox.children('.ibox-content');
         content.slideToggle(200);
         button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
@@ -49,7 +49,7 @@ $(document).ready(function () {
     // Fullscreen ibox function
     $('.fullscreen-link').on('click', function (e) {
         e.preventDefault();
-        var ibox = $(this).closest('div.ibox');
+        var ibox   = $(this).closest('div.ibox');
         var button = $(this).find('i');
         $('body').toggleClass('fullscreen-ibox-mode');
         button.toggleClass('fa-expand').toggleClass('fa-compress');
@@ -101,7 +101,7 @@ $(document).ready(function () {
     // Small todo handler
     $('.check-link').on('click', function () {
         var button = $(this).find('i');
-        var label = $(this).next('span');
+        var label  = $(this).next('span');
         button.toggleClass('fa-check-square').toggleClass('fa-square-o');
         label.toggleClass('todo-completed');
         return false;
@@ -182,11 +182,11 @@ $(window).bind("load resize", function () {
 $(document).ready(function () {
     if (localStorageSupport()) {
 
-        var collapse = localStorage.getItem("collapse_menu");
+        var collapse     = localStorage.getItem("collapse_menu");
         var fixedsidebar = localStorage.getItem("fixedsidebar");
-        var fixednavbar = localStorage.getItem("fixednavbar");
-        var boxedlayout = localStorage.getItem("boxedlayout");
-        var fixedfooter = localStorage.getItem("fixedfooter");
+        var fixednavbar  = localStorage.getItem("fixednavbar");
+        var boxedlayout  = localStorage.getItem("boxedlayout");
+        var fixedfooter  = localStorage.getItem("fixedfooter");
 
         var body = $('body');
 
@@ -270,7 +270,7 @@ function SmoothlyMenu() {
 // Dragable panels
 function WinMove() {
     var element = "[class*=col]";
-    var handle = ".ibox-title";
+    var handle  = ".ibox-title";
     var connect = "[class*=col]";
     $(element).sortable(
         {

@@ -20,9 +20,10 @@
 	<link href="{{asset('assets/template/css/style.css')}}" rel="stylesheet">
 
 	<style type="text/css">
-		.dropdown.show > a{
+		.dropdown.show > a {
 				background: #fff !important;
-				color: #08088A !important;
+				color: #FFC000 !important;
+  			font-weight: bold;
 		}
 
 		.dropdown-menu.show {
@@ -42,11 +43,11 @@
     .dropdown-submenu.active > a,
     .dropdown-submenu.open > a {
 	    	background: #fff !important;
-	    	color: #08088A !important;
+	    	color: #FFC000 !important;
 	    	font-weight: bold;
     }
 
     .nav-icon {
-    		color: #08088A !important;
+    		color: #FFC000 !important;
     }
 	</style>
