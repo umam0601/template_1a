@@ -1,9 +1,13 @@
 <!-- Mainly scripts -->
     <script src="{{asset('assets/template/js/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('assets/template/js/popper.min.js')}}"></script>
-    <script src="{{asset('assets/template/js/bootstrap.js')}}"></script>
+    <script src="{{asset('assets/template/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/template/js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
     <script src="{{asset('assets/template/js/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
+
+<!-- Data Table -->
+    <script src="{{asset('assets/template/js/plugins/dataTables/datatables.min.js')}}"></script>
+    <script src="{{asset('assets/template/js/plugins/dataTables/dataTables.bootstrap4.min.js')}}"></script>
 
 <!-- Flot -->
     <script src="{{asset('assets/template/js/plugins/flot/jquery.flot.js')}}"></script>
@@ -18,10 +22,11 @@
 
 <!-- Custom and plugin javascript -->
     <script src="{{asset('assets/template/js/style.js')}}"></script>
+    {{-- <script src="{{asset('assets/template/js/inspinia.js')}}"></script> --}}
     <script src="{{asset('assets/template/js/plugins/pace/pace.min.js')}}"></script>
 
 <!-- jQuery UI -->
-    <script src="{{asset('assets/template/js/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+    {{-- <script src="{{asset('assets/template/js/plugins/jquery-ui/jquery-ui.min.js')}}"></script> --}}
 
 <!-- GITTER -->
     <script src="{{asset('assets/template/js/plugins/gritter/jquery.gritter.min.js')}}"></script>
@@ -43,16 +48,21 @@
 
 <!-- Script -->
     <script>
-        $('.dropdown-submenu a.submenu').on("click", function(e){
-          event.stopPropagation();
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
 
-          if($(this).closest('.dropdown-submenu').hasClass('open')){
-              $(this).closest('.dropdown-submenu').removeClass('open');
-              $('.dropdown-submenu').find('.dropdown-menu').removeClass('show');
-          }else{
-              $('.dropdown-submenu').removeClass('open');
-              $(this).closest('.dropdown-submenu').addClass('open');
-              $('.dropdown-submenu').find('.dropdown-menu').addClass('show');
-          }
-        });
+      $('.dropdown-submenu a.submenu').on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+
+        if($(this).closest('.dropdown-submenu').hasClass('open')){
+            $(this).closest('.dropdown-submenu').removeClass('open');
+            $('.dropdown-submenu').find('.dropdown-menu').removeClass('show');
+        }else{
+            $('.dropdown-submenu').removeClass('open');
+            $(this).closest('.dropdown-submenu').addClass('open');
+            $('.dropdown-submenu').find('.dropdown-menu').addClass('show');
+        }
+      });
     </script>

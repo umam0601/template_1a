@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('dashboard');
 });
+
+Route::get('/master/master-barang', function () {
+    return view('project.menu_master.master_barang.index');
+});

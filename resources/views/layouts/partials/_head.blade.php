@@ -10,6 +10,9 @@
 <!-- Gritter -->
 	<link href="{{asset('assets/template/js/plugins/gritter/jquery.gritter.css')}}" rel="stylesheet">
 
+<!-- Data Table -->
+	<link href="{{asset('assets/template/css/plugins/dataTables/datatables.min.css')}}" rel="stylesheet">
+
 <!-- Animate -->
 	<link href="{{asset('assets/template/css/animate.css')}}" rel="stylesheet">
 
@@ -22,7 +25,7 @@
 	<style type="text/css">
 		.dropdown.show > a {
 				background: #fff !important;
-				color: #FFC000 !important;
+				color: #42b549 !important;
   			font-weight: bold;
 		}
 
@@ -43,11 +46,28 @@
     .dropdown-submenu.active > a,
     .dropdown-submenu.open > a {
 	    	background: #fff !important;
-	    	color: #FFC000 !important;
+	    	color: #42b549 !important;
 	    	font-weight: bold;
     }
 
     .nav-icon {
-    		color: #FFC000 !important;
+    		color: #EED10F !important;
+    }
+
+    .pointer {
+    	cursor: pointer;
+    }
+
+    .form-input {
+    	background: #E5FFE6;
+    	padding: 5px 5px 0px 5px;
+    	margin-bottom: 0px;
+    	border-bottom: 1px solid #fff;
+    }
+
+    .form-input .label-form {
+    	width: 100%;
+    	padding: 5px;
+    	background: #42b54912;
     }
 	</style>

@@ -5,13 +5,24 @@
     </button>
     <div class="navbar-collapse collapse" id="navbar">
         <ul class="nav navbar-nav mr-auto">
-            <li class="dropdown">
+            <li class="dropdown {{ (Request::is('master/*')) ? 'active' : '' }}">
                 <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fas fa-fw fa-hdd nav-icon"></i>&nbsp;&nbsp; MASTER</a>
                 <ul role="menu" class="dropdown-menu">
-                    <li><a href=""><i class="fas fa-fw fa-boxes nav-icon"></i>&nbsp; Master Barang</a></li>
-                    <li><a href=""><i class="fas fa-fw fa-puzzle-piece nav-icon"></i>&nbsp; Master Satuan</a></li>
-                    <li><a href=""><i class="fas fa-fw fa-dollar-sign nav-icon"></i>&nbsp; Master Harga</a></li>
-                    <li><a href=""><i class="fas fa-fw fa-warehouse nav-icon"></i>&nbsp; Master Gudang</a></li>
+                    <li class="{{ (Request::is('master/master-barang') || Request::is('master/master-barang/*')) ? 'active' : '' }}">
+                        <a href="{{url('master/master-barang')}}"><i class="fas fa-fw fa-boxes nav-icon"></i>&nbsp; Master Barang</a>
+                    </li>
+                    <li  class="{{ (Request::is('master/master-satuan') || Request::is('master/master-satuan/*')) ? 'active' : '' }}">
+                        <a href=""><i class="fas fa-fw fa-puzzle-piece nav-icon"></i>&nbsp; Master Satuan</a>
+                    </li>
+                    <li  class="{{ (Request::is('master/master-supplier') || Request::is('master/master-supplier/*')) ? 'active' : '' }}">
+                        <a href=""><i class="fas fa-fw fa-handshake nav-icon"></i>&nbsp; Master Supplier</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-fw fa-dollar-sign nav-icon"></i>&nbsp; Master Harga</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-fw fa-dolly-flatbed nav-icon"></i>&nbsp; Master Gudang</a>
+                    </li>
                     <li><a href=""><i class="fas fa-fw fa-user-tie nav-icon"></i>&nbsp; Master Pegawai</a></li>
                     <li class="dropdown-submenu">
                         <a class="submenu">
