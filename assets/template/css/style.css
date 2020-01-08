@@ -5020,38 +5020,38 @@ table.table-mail tr td {
 /* BACKGROUNDS */
 .gray-bg,
 .bg-muted {
-  background-color: #f3f3f4;
+  background-color: #f3f3f4 !important;
 }
 .white-bg {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .blue-bg,
 .bg-success {
   background-color: #1c84c6 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .navy-bg,
 .bg-primary {
   background-color: #42b549 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .lazur-bg,
 .bg-info {
   background-color: #23c6c8 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .yellow-bg,
 .bg-warning {
   background-color: #f8ac59 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .red-bg,
 .bg-danger {
   background-color: #ed5565 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .black-bg {
-  background-color: #262626;
+  background-color: #262626 !important;
 }
 .panel-primary {
   border-color: #42b549;
@@ -5248,25 +5248,25 @@ a.close-canvas-menu:hover {
 }
 /* MARGINS & PADDINGS */
 .p-xxs {
-  padding: 5px;
+  padding: 5px !important;
 }
 .p-xs {
-  padding: 10px;
+  padding: 10px !important;
 }
 .p-sm {
-  padding: 15px;
+  padding: 15px !important;
 }
 .p-m {
-  padding: 20px;
+  padding: 20px !important;
 }
 .p-md {
-  padding: 25px;
+  padding: 25px !important;
 }
 .p-lg {
-  padding: 30px;
+  padding: 30px !important;
 }
 .p-xl {
-  padding: 40px;
+  padding: 40px !important;
 }
 .p-w-xs {
   padding: 0 10px;

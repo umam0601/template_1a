@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-md-7">
                             <div class="input-group">
-                                <select name="" id="" class="form-control form-control-sm">
+                                <select name="" id="" class="select2 text-sm">
                                     <option value="">Pilih Kategori</option>
                                 </select>
                                 <span class="input-group-addon pointer" data-toggle="tooltip" data-placement="top" title="Tambah Kategori">
@@ -44,14 +44,7 @@
                             <label for="" class="label-form">Jenis Satuan</label>
                         </div>
                         <div class="col-md-7">
-                            <div class="input-group">
-                                <select name="" id="" class="form-control form-control-sm">
-                                    <option value="">Pilih Satuan</option>
-                                </select>
-                                <span class="input-group-addon pointer" data-toggle="tooltip" data-placement="top" title="Tambah Satuan">
-                                    <i class="fas fa-plus text-navy"></i>
-                                </span>
-                            </div>
+                            <textarea rows="2" class="form-control text-sm"></textarea>
                         </div>
                     </div>
                 </div>
@@ -498,7 +491,7 @@
 <script>
     $(document).ready(function(){
         $('.dataTables-example').DataTable({
-        pageLength: 10,
+        pageLength: 5,
         responsive: true,
         info: false,
         dom: '<"html5buttons"B>lTfgitp',
